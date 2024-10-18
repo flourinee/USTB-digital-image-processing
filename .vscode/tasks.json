@@ -10,7 +10,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${workspaceFolder}\\dest\\${fileBasenameNoExtension}.exe",
                 "-I",
                 "C:/src/opencv-4.10.0/build/install/include",
                 "-I",
