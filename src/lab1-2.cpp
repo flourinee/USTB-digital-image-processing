@@ -25,10 +25,10 @@ void proc_laplace(string* path,string* out_path,int laplace_size,int bulrsize,fl
 }
 int main(){
 	float core[9]={0,-1,0,-1,5,-1,0,-1,0};
-    string img1_path="../img/img1.jfif"; 
-    string img2_path="../img/img2.jfif"; 
-    string img1_out_path="../img/imgout1.jpg"; 
-    string img2_out_path="../img/imgout2.jpg"; 
+    string img1_path="./img/img1.jfif"; 
+    string img2_path="./img/img2.jfif"; 
+    string img1_out_path="./img/imgout1.jpg"; 
+    string img2_out_path="./img/imgout2.jpg"; 
     proc_laplace(&img1_path,&img1_out_path,3,2,core);
     proc_laplace(&img2_path,&img2_out_path,3,2,core);
     return 0;
