@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "g++.exe build active file",
+			"command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+			"args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "C:/src/opencv-4.10.0/build/install/include",
+                "-I",
+				"C:/src/opencv-4.10.0/build/install/include/opencv2",
+                "-L",
+                "C:/src/opencv-4.10.0/build/install/x64/mingw/bin",
+                "-L",
+                "C:/src/opencv-4.10.0/build/install/x64/mingw/lib",
+				"-l",
+				"libopencv_world4100"
+            ],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+                "kind": "build",
+                "isDefault": true
+            },
+			// "group": "build",
+			"detail": "编译器: C:\\msys64\\ucrt64\\bin\\g++.exe"
+		}
+	]
+}
